@@ -1,9 +1,14 @@
-import { Stack, Heading } from "@chakra-ui/react";
+import { Button, Heading } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import { CenterContainer } from "../../components/CenterContainer";
 
 export const About = () => {
   return (
-    <Stack>
-      <Heading>About</Heading>
-    </Stack>
+    <CenterContainer>
+      <Heading mb="12">About</Heading>
+      <Button as={Link} to="/" colorScheme="pink">
+        Voltar
+      </Button>
+    </CenterContainer>
   );
 };
